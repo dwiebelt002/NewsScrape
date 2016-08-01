@@ -11,6 +11,7 @@ var cheerio = require('cheerio');
 var bodyParser = require('body-parser');
 var expressHandlebars = require('express-handlebars');
 var path = require('path');
+var fs = require('fs');
 
 // Database configuration
 var mongojs = require('mongojs');
@@ -21,6 +22,8 @@ var collections = ["articles", "comments"];
 app.get('/', function(req, res) {
   res.send("Hello world");
 });
+
+var url =""
 
 // listen on port 8081
 app.listen(8081, function() {
