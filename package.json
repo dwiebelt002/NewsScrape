@@ -1,0 +1,28 @@
+{
+  "name": "newsscrape",
+  "version": "1.0.0",
+  "description": "A web application that scrapes articles from websites and allows users to read and comment on the content. Technologies include MongoDb and Cheerio. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwiebelt002/NewsScrape.git"
+  },
+  "author": "Devin J. Wiebelt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwiebelt002/NewsScrape/issues"
+  },
+  "homepage": "https://github.com/dwiebelt002/NewsScrape#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.20.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongojs": "^2.4.0",
+    "request": "^2.74.0"
+  }
+}
