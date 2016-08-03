@@ -1,0 +1,28 @@
+ <div id="wrapper">
+  {{#each articles}}
+    <form id="userinput">
+    <h2>{{this.title}}</h2>
+    
+    <p>{{this.article}}</p>
+        
+
+      <input type="text" id="comment" placeholder="Comment on this article."/>
+      <br />
+
+      <button type="submit" id="addComment">Add New</button>
+
+    </form>
+    <div id="results">
+      <div id="postedComments">
+            <tr><th></th></th></tr>
+      </div>
+      <button type="submit" id="deleteComment">Delete</button>
+      {{/each}}
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="app.js"></script>
+
+
