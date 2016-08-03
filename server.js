@@ -216,6 +216,18 @@ app.get('/markunread/:id', function(req, res) {
 
 //=============================================================================================================
 
+//heroku mongojs remote database 
+
+var uri = 'mongodb://heroku_h9tk8xlh:alqsjb77a5os1hlhlqval9juj00k@ds139715.mlab.com:39715/heroku_h9tk8xlh';
+
+mongodb.MongoClient.connect(uri, function(err, db) {
+  
+  if(err) throw err;
+
+
+//==============================================================================================================
+
+
 // listen on port 8081
 app.listen(8081, function() {
   console.log('App running on port 8081!');
