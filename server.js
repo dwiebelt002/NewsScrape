@@ -12,6 +12,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
 var fs = require('fs');
+var mongodb = require('mongodb');
 
 // Database configuration
 var mongojs = require('mongojs');
